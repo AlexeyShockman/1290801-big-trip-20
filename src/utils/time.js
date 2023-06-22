@@ -8,7 +8,7 @@ const TIME_FORMAT = 'HH:mm';
 const MS_IN_ONE_HOUR = 3600000;
 const MS_IN_ONE_DAY = 86400000;
 
-/** возвращает (строка) дату в человекопонятном виде. Если стоит флаг true вторым аргументом, то возвращает время */
+/** возвращает (строку) дату в человекопонятном виде. Если стоит флаг true вторым аргументом, то возвращает время */
 function humanizeDate(date, itsTime) {
   const format = !itsTime ? DATE_FORMAT : TIME_FORMAT;
   return date ? dayjs(date).format(format) : '';
